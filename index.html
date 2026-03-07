@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#2c3e50" />
+  <meta name="theme-color" content="#0f2033" />
   <title>Elite HVAC Solutions | Guelph's Heating & Cooling Experts</title>
-  <meta name="description" content="Elite HVAC Solutions — professional furnace installation, AC, heat pumps, duct cleaning, and emergency repair across Guelph and surrounding areas. Energy Star certified. 10-year warranty. Financing available." />
+  <meta name="description" content="Elite HVAC Solutions — furnace installation, AC, heat pumps, duct cleaning, and 24/7 emergency repair in Guelph, Kitchener, Cambridge, and Waterloo. Energy Star certified with a 10-year warranty." />
 
-  <!-- Preconnect for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Image resilience: define before any <img onerror="imgFallback(this)"> -->
   <script>
-    var IMG_FALLBACK = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3ClinearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%232c3e50%22/%3E%3Cstop offset=%22100%25%22 stop-color=%22%231a252f%22/%3E%3C/linearGradient%3E%3Crect width=%22800%22 height=%22600%22 fill=%22url(%23g)%22/%3E%3Ccircle cx=%22400%22 cy=%22280%22 r=%2290%22 fill=%22rgba(231,76,60,0.18)%22/%3E%3Cpath d=%22M370 260 Q400 220 430 260 Q430 300 400 320 Q370 300 370 260Z%22 fill=%22rgba(255,255,255,0.1)%22/%3E%3C/svg%3E';
-    function imgFallback(img) {
-      img.onerror = null;
-      img.src = IMG_FALLBACK;
-      img.style.objectFit = 'cover';
-      var p = img.parentElement;
-      if (p) p.style.background = 'linear-gradient(135deg,#2c3e50 0%,#1a252f 100%)';
-    }
+    var IMG_FALLBACK = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3ClinearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%230f2033%22/%3E%3Cstop offset=%22100%25%22 stop-color=%22%23061018%22/%3E%3C/linearGradient%3E%3Crect width=%22800%22 height=%22600%22 fill=%22url(%23g)%22/%3E%3C/svg%3E';
+    function imgFallback(img) { img.onerror = null; img.src = IMG_FALLBACK; }
   </script>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ═══════════════════════════════════
-     TOP BAR
-═══════════════════════════════════ -->
+<!-- TOP BAR -->
 <div id="topbar">
   <div class="topbar-left">
     <div class="topbar-item">
@@ -47,14 +37,11 @@
   </a>
 </div>
 
-<!-- ═══════════════════════════════════
-     STICKY HEADER
-═══════════════════════════════════ -->
+<!-- STICKY HEADER -->
 <header id="hdr">
   <div class="wrap hdr-inner">
-    <a href="#" class="logo" aria-label="Elite HVAC Solutions — home">
+    <a href="/" class="logo" aria-label="Elite HVAC Solutions — home">
       <div class="logo-icon" aria-hidden="true">
-        <!-- Snowflake + Flame combo icon -->
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/>
           <circle cx="12" cy="12" r="3"/>
@@ -67,12 +54,11 @@
     </a>
 
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#testimonials">Reviews</a>
-      <a href="#about">About</a>
-      <a href="#quote">Contact</a>
+      <a href="/">Home</a>
+      <a href="services/">Services</a>
+      <a href="projects/">Projects</a>
+      <a href="about/">About</a>
+      <a href="contact/">Contact</a>
     </nav>
 
     <div class="hdr-right">
@@ -80,7 +66,7 @@
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.94a16 16 0 0 0 6.16 6.16l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         (519) 555-0161
       </a>
-      <a href="#quote" class="btn btn-primary btn-sm">Get a Quote</a>
+      <a href="contact/" class="btn btn-accent btn-sm">Get a Quote</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -91,25 +77,22 @@
 <!-- Mobile Nav Overlay -->
 <div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
   <nav>
-    <a href="#services" class="mobile-link">Services</a>
-    <a href="#gallery" class="mobile-link">Gallery</a>
-    <a href="#why-us" class="mobile-link">Why Us</a>
-    <a href="#testimonials" class="mobile-link">Reviews</a>
-    <a href="#about" class="mobile-link">About</a>
-    <a href="#quote" class="mobile-link">Contact</a>
+    <a href="/" class="mobile-link">Home</a>
+    <a href="services/" class="mobile-link">Services</a>
+    <a href="projects/" class="mobile-link">Projects</a>
+    <a href="about/" class="mobile-link">About</a>
+    <a href="contact/" class="mobile-link">Contact</a>
   </nav>
   <div class="mobile-nav-cta">
-    <a href="tel:5195550161" class="btn btn-outline-lt btn-lg" style="justify-content:center">
+    <a href="tel:5195550161" class="btn btn-outline-dk btn-lg" style="justify-content:center">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.94a16 16 0 0 0 6.16 6.16l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       (519) 555-0161
     </a>
-    <a href="#quote" class="btn btn-primary btn-lg" style="justify-content:center">Get a Free Quote</a>
+    <a href="contact/" class="btn btn-accent btn-lg" style="justify-content:center">Get a Free Quote</a>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════
-     HERO
-═══════════════════════════════════ -->
+<!-- HERO -->
 <section id="hero" aria-labelledby="hero-h1">
   <div class="hero-bg">
     <img
@@ -132,39 +115,30 @@
           From furnace installs to emergency repairs — Elite HVAC delivers certified, reliable heating and cooling solutions. Energy Star certified equipment, flexible financing, and a 10-year warranty you can count on.
         </p>
         <div class="hero-ctas">
-          <a href="#quote" class="btn btn-accent btn-lg">
+          <a href="contact/" class="btn btn-accent btn-lg">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             Get a Free Quote
           </a>
-          <a href="#services" class="btn btn-outline btn-lg">
+          <a href="services/" class="btn btn-outline btn-lg">
             Our Services
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
         <div class="hero-badges" role="list" aria-label="Trust indicators">
           <div class="hero-badge" role="listitem">
-            <span class="badge-icon" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </span>
+            <span class="badge-icon" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
             4.9-Star Google Rated
           </div>
           <div class="hero-badge" role="listitem">
-            <span class="badge-icon" aria-hidden="true">
-              <!-- Energy Star leaf-ish icon -->
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </span>
+            <span class="badge-icon" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
             Energy Star Certified
           </div>
           <div class="hero-badge" role="listitem">
-            <span class="badge-icon" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-            </span>
+            <span class="badge-icon" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></span>
             10-Year Warranty
           </div>
           <div class="hero-badge" role="listitem">
-            <span class="badge-icon" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </span>
+            <span class="badge-icon" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
             Financing Available
           </div>
         </div>
@@ -173,9 +147,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     STATS STRIP
-═══════════════════════════════════ -->
+<!-- STATS STRIP -->
 <div id="stats" aria-label="Business statistics">
   <div class="wrap">
     <div class="stats-row">
@@ -199,15 +171,13 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════
-     SERVICES
-═══════════════════════════════════ -->
-<section id="services" aria-labelledby="svc-title">
+<!-- SERVICES OVERVIEW -->
+<section id="services-overview" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow sr">What We Do</div>
       <h2 class="section-title sr d1" id="svc-title">Complete HVAC Services,<br>One Trusted Team</h2>
-      <p class="section-sub sr d2">Whether you need a new furnace, an emergency repair at 2am, or a maintenance plan to keep things running smooth — we've got you covered, year-round.</p>
+      <p class="section-sub sr d2">Whether you need a new furnace, an emergency repair, or a maintenance plan — we've got you covered, year-round.</p>
     </div>
     <div class="services-grid">
 
@@ -217,472 +187,106 @@
           <div class="service-tag">Most Popular</div>
           <h3>Furnace Installation</h3>
           <p class="service-desc">High-efficiency furnace installs with Energy Star certified equipment. We size your system correctly, handle all permits, and back every install with our 10-year warranty.</p>
-          <a href="#quote" class="service-arrow">
-            Get a Quote
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <a href="services/" class="service-arrow">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
       <div class="service-card sr d2">
-        <img src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="Air conditioning installation — outdoor AC unit in residential setting" loading="lazy" onerror="imgFallback(this)">
+        <img src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="Air conditioning installation — outdoor AC unit" loading="lazy" onerror="imgFallback(this)">
         <div class="service-body">
           <div class="service-tag">Beat the Heat</div>
           <h3>AC Installation</h3>
           <p class="service-desc">Central air conditioning systems designed for Ontario summers. Energy-efficient models, professional installation, and flexible financing so cost is never a barrier to comfort.</p>
-          <a href="#quote" class="service-arrow">
-            Get a Quote
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <a href="services/" class="service-arrow">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
       <div class="service-card sr d3">
-        <img src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="Heat pump installation — modern energy-efficient heating and cooling unit" loading="lazy" onerror="imgFallback(this)">
-        <div class="service-body">
-          <div class="service-tag">All-Season Efficiency</div>
-          <h3>Heat Pumps</h3>
-          <p class="service-desc">One system for heating and cooling. Modern cold-climate heat pumps deliver reliable comfort down to -30°C while slashing your energy bills and reducing your carbon footprint.</p>
-          <a href="#quote" class="service-arrow">
-            Get a Quote
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="service-card sr d2">
-        <img src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="Duct cleaning — professional cleaning of HVAC ductwork" loading="lazy" onerror="imgFallback(this)">
-        <div class="service-body">
-          <div class="service-tag">Improve Air Quality</div>
-          <h3>Duct Cleaning</h3>
-          <p class="service-desc">Professional duct cleaning removes years of dust, allergens, and debris. Breathe cleaner air, improve system efficiency, and reduce heating and cooling costs with a full duct cleaning service.</p>
-          <a href="#quote" class="service-arrow">
-            Get a Quote
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="service-card sr d3">
-        <img src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="Emergency HVAC repair — technician performing urgent heating system repair" loading="lazy" onerror="imgFallback(this)">
+        <img src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="HVAC technician emergency repair" loading="lazy" onerror="imgFallback(this)">
         <div class="service-body">
           <div class="service-tag">24/7 Available</div>
           <h3>Emergency Repair</h3>
-          <p class="service-desc">Furnace out at midnight? AC fails on the hottest day of the year? Our emergency technicians are on call 24 hours a day, 7 days a week. Most repairs completed same day.</p>
-          <a href="tel:5195550161" class="service-arrow">
-            Call Now — 24/7
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="service-card sr d4">
-        <img src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=800&h=534&dpr=1" alt="HVAC maintenance plan — technician performing routine system inspection" loading="lazy" onerror="imgFallback(this)">
-        <div class="service-body">
-          <div class="service-tag">Save Money Long-Term</div>
-          <h3>Maintenance Plans</h3>
-          <p class="service-desc">Annual tune-ups, priority emergency response, and discounts on parts and labour. Our maintenance plans keep your system running at peak efficiency and catch small issues before they become costly repairs.</p>
-          <a href="#quote" class="service-arrow">
-            Get a Quote
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
+          <p class="service-desc">No heat in winter, no AC in summer — we dispatch fast, 24/7/365. Our service trucks are stocked to handle most breakdowns on the first visit, any time of day.</p>
+          <a href="contact/" class="service-arrow">Call now <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     GALLERY
-═══════════════════════════════════ -->
-<section id="gallery" aria-labelledby="gal-title">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow sr">Our Work</div>
-      <h2 class="section-title sr d1" id="gal-title">Recent Installs &amp; Projects</h2>
-      <p class="section-sub cx sr d2">Every photo is a real Guelph-area home — real families now enjoying year-round comfort.</p>
-    </div>
-
-    <div class="gallery-grid" id="gallery-grid" role="list">
-
-      <div class="gallery-item featured sr" data-src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1" data-caption="High-Efficiency Furnace Install — Guelph" role="listitem">
-        <img src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="High-efficiency furnace installation in a Guelph home" loading="lazy" onerror="imgFallback(this)">
-        <div class="gallery-overlay"><span class="gallery-label">Furnace Installation</span></div>
-        <div class="gallery-zoom" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </div>
-      </div>
-
-      <div class="gallery-item sr d1" data-src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" data-caption="AC System Installation — Kitchener" role="listitem">
-        <img src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=700&h=467&dpr=1" alt="Air conditioning system installation in Kitchener" loading="lazy" onerror="imgFallback(this)">
-        <div class="gallery-overlay"><span class="gallery-label">AC Installation</span></div>
-        <div class="gallery-zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-      </div>
-
-      <div class="gallery-item sr d2" data-src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" data-caption="Cold-Climate Heat Pump — Cambridge" role="listitem">
-        <img src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=700&h=467&dpr=1" alt="Cold-climate heat pump installation in Cambridge" loading="lazy" onerror="imgFallback(this)">
-        <div class="gallery-overlay"><span class="gallery-label">Heat Pump Install</span></div>
-        <div class="gallery-zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-      </div>
-
-      <div class="gallery-item wide sr d1" data-src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1" data-caption="Complete HVAC System Replacement — Waterloo" role="listitem">
-        <img src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" alt="Complete HVAC system replacement in Waterloo" loading="lazy" onerror="imgFallback(this)">
-        <div class="gallery-overlay"><span class="gallery-label">Full System Replacement</span></div>
-        <div class="gallery-zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-      </div>
-
-      <div class="gallery-item sr d2" data-src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" data-caption="Duct Cleaning Service — Guelph" role="listitem">
-        <img src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=700&h=467&dpr=1" alt="Professional duct cleaning service in Guelph" loading="lazy" onerror="imgFallback(this)">
-        <div class="gallery-overlay"><span class="gallery-label">Duct Cleaning</span></div>
-        <div class="gallery-zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-      </div>
-
-      <div class="gallery-item sr d3" data-src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&dpr=1" data-caption="Annual Maintenance Inspection — Fergus" role="listitem">
-        <img src="https://images.pexels.com/photos/5768174/pexels-photo-5768174.jpeg?auto=compress&cs=tinysrgb&w=700&h=467&dpr=1" alt="Annual HVAC maintenance inspection in Fergus" loading="lazy" onerror="imgFallback(this)">
-        <div class="gallery-overlay"><span class="gallery-label">Maintenance Inspection</span></div>
-        <div class="gallery-zoom" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-      </div>
-
-    </div>
-
-    <div class="gallery-cta sr">
-      <a href="#quote" class="btn btn-primary">
-        Book Your Service
+    <div class="gallery-cta sr" style="margin-top:2.5rem">
+      <a href="services/" class="btn btn-accent">
+        View All Services
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     WHY CHOOSE US
-═══════════════════════════════════ -->
+<!-- WHY CHOOSE US (brief) -->
 <section id="why-us" aria-labelledby="why-title">
   <div class="wrap">
     <div class="why-grid">
       <div class="why-img sr">
         <img
-          src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=700&h=900&dpr=1"
-          alt="Elite HVAC technician performing a professional installation"
+          src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=700&h=900&dpr=1"
+          alt="Elite HVAC technician on the job"
           loading="lazy" onerror="imgFallback(this)">
         <div class="why-img-badge">
-          <div class="big">10yr</div>
-          <div class="sm">Parts &amp;<br>Labour Warranty</div>
+          <div class="big">13+</div>
+          <div class="sm">Years Serving<br>Guelph</div>
         </div>
       </div>
       <div>
         <div class="eyebrow sr">Why Choose Us</div>
         <h2 class="section-title sr d1" id="why-title">The Elite HVAC Difference</h2>
-        <p class="section-sub sr d2" style="margin-bottom: 0">
-          We've been keeping Guelph homes comfortable since 2011. Here's why thousands of homeowners trust us with their most essential home systems.
+        <p class="section-sub sr d2" style="margin-bottom:0">
+          We're locally owned and operated. Every quote is written and upfront. Every install comes with our 10-year parts and labour warranty. No exceptions.
         </p>
         <div class="why-benefits">
           <div class="why-benefit sr d1">
-            <div class="why-benefit-icon" aria-hidden="true">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div>
-              <h4>Energy Star Certified Equipment</h4>
-              <p>We only install Energy Star certified systems — government-approved efficiency standards that save you money on energy bills every single month.</p>
-            </div>
+            <div class="why-benefit-icon" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+            <div><h4>10-Year Parts &amp; Labour Warranty</h4><p>Every system we install is backed by our industry-leading 10-year warranty on parts and labour.</p></div>
           </div>
           <div class="why-benefit sr d2">
-            <div class="why-benefit-icon" aria-hidden="true">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <div>
-              <h4>Flexible Financing Available</h4>
-              <p>New system shouldn't mean financial stress. We offer flexible financing options with low monthly payments so you can stay comfortable without breaking the bank.</p>
-            </div>
+            <div class="why-benefit-icon" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div><h4>Energy Star Certified Equipment</h4><p>We install only certified, high-efficiency systems that qualify for available rebates and lower your monthly bills.</p></div>
           </div>
           <div class="why-benefit sr d3">
-            <div class="why-benefit-icon" aria-hidden="true">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-            </div>
-            <div>
-              <h4>10-Year Parts &amp; Labour Warranty</h4>
-              <p>Industry-leading 10-year warranty on every installation — parts and labour. If anything goes wrong, we fix it at no cost to you. That's our promise.</p>
-            </div>
+            <div class="why-benefit-icon" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div><h4>Flexible Financing Available</h4><p>No one should suffer through a Guelph winter waiting for financing. We offer on-the-spot payment plans with low monthly options.</p></div>
           </div>
-          <div class="why-benefit sr d4">
-            <div class="why-benefit-icon" aria-hidden="true">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div>
-              <h4>24/7 Emergency Response</h4>
-              <p>HVAC emergencies don't wait for business hours and neither do we. Our licensed technicians are on call around the clock with most emergency repairs completed same day.</p>
-            </div>
-          </div>
+        </div>
+        <div style="margin-top:1.75rem" class="sr d4">
+          <a href="about/" class="btn btn-accent">Our Story</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     TESTIMONIALS
-═══════════════════════════════════ -->
-<section id="testimonials" aria-labelledby="test-title">
-  <div class="wrap">
-    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem; margin-bottom: 2.5rem;">
-      <div class="testimonials-intro">
-        <div class="eyebrow lt sr">Client Reviews</div>
-        <h2 class="section-title lt sr d1" id="test-title">What Our Customers Say</h2>
-        <div class="rating-display sr d2">
-          <div class="stars" aria-label="4.9 star rating">★★★★★</div>
-          <div class="rating-text">4.9 · 300+ verified reviews · Google</div>
-        </div>
-      </div>
-      <div class="carousel-controls sr d1">
-        <button class="carousel-btn" id="prev-btn" aria-label="Previous testimonials">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <div class="carousel-dots" id="carousel-dots" role="tablist"></div>
-        <button class="carousel-btn" id="next-btn" aria-label="Next testimonials">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-      </div>
-    </div>
-    <div class="carousel-wrap">
-      <div class="carousel-track-outer">
-        <div class="carousel-track" id="carousel-track">
-
-          <div class="testimonial-card">
-            <div class="t-quote">"</div>
-            <div class="t-stars">★★★★★</div>
-            <p class="t-text">Our old furnace died on the coldest night in January. I called Elite HVAC at 11pm and they had a technician at our door within two hours. The repair was done by 2am. Absolutely incredible service — they saved our family that night.</p>
-            <div class="t-author">
-              <div class="t-avatar" aria-hidden="true">D</div>
-              <div>
-                <div class="t-name">Dave &amp; Karen M.</div>
-                <div class="t-loc">Guelph · Google · 2 weeks ago</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="t-quote">"</div>
-            <div class="t-stars">★★★★★</div>
-            <p class="t-text">Had Elite install a new heat pump last spring. The team was professional, clean, and done in a single day. Energy bills dropped by almost 40% compared to our old setup. The 10-year warranty gave us real peace of mind. Highly recommend.</p>
-            <div class="t-author">
-              <div class="t-avatar" aria-hidden="true">P</div>
-              <div>
-                <div class="t-name">Patricia L.</div>
-                <div class="t-loc">Kitchener · Google · 1 month ago</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="t-quote">"</div>
-            <div class="t-stars">★★★★★</div>
-            <p class="t-text">Used the financing option for our new AC and furnace combo. The monthly payments were manageable and the whole process was straightforward. Installation was flawless — the guys were courteous, wore boot covers inside, and cleaned up completely. Five stars without question.</p>
-            <div class="t-author">
-              <div class="t-avatar" aria-hidden="true">R</div>
-              <div>
-                <div class="t-name">Rob T.</div>
-                <div class="t-loc">Cambridge · Google · 6 weeks ago</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="t-quote">"</div>
-            <div class="t-stars">★★★★★</div>
-            <p class="t-text">Been on their maintenance plan for three years now. They come out twice a year, the system runs perfectly, and I've had zero emergency calls. Worth every penny. If you're serious about protecting your HVAC investment, get the plan.</p>
-            <div class="t-author">
-              <div class="t-avatar" aria-hidden="true">A</div>
-              <div>
-                <div class="t-name">Andrea F.</div>
-                <div class="t-loc">Waterloo · Google · 2 months ago</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="t-quote">"</div>
-            <div class="t-stars">★★★★★</div>
-            <p class="t-text">Three quotes, and Elite was the most thorough by far. They measured everything, explained the sizing rationale, and didn't try to upsell me on things I didn't need. The install was done right the first time. That's rare. Really impressed.</p>
-            <div class="t-author">
-              <div class="t-avatar" aria-hidden="true">J</div>
-              <div>
-                <div class="t-name">James W.</div>
-                <div class="t-loc">Fergus · Google · 3 months ago</div>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- /track -->
-      </div><!-- /track-outer -->
-    </div><!-- /carousel-wrap -->
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     ABOUT
-═══════════════════════════════════ -->
-<section id="about" aria-labelledby="about-title">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="about-img-stack sr">
-        <div class="about-img-main">
-          <img
-            src="https://images.pexels.com/photos/8486882/pexels-photo-8486882.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
-            alt="Elite HVAC Solutions team performing a professional installation"
-            loading="lazy" onerror="imgFallback(this)">
-        </div>
-        <div class="about-img-accent">
-          <img
-            src="https://images.pexels.com/photos/7218010/pexels-photo-7218010.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
-            alt="Energy Star certified HVAC equipment detail"
-            loading="lazy" onerror="imgFallback(this)">
-        </div>
-      </div>
-      <div>
-        <div class="eyebrow sr">Our Story</div>
-        <h2 class="section-title sr d1" id="about-title">Keeping Guelph Comfortable Since 2011</h2>
-        <p class="sr d2" style="font-size:1rem;color:var(--text-lt);line-height:1.78;margin-bottom:1.25rem">
-          Elite HVAC Solutions was founded in Guelph with one goal: provide the kind of honest, high-quality HVAC service that homeowners could actually count on. No bait-and-switch pricing, no oversized crews, no cut corners.
-        </p>
-        <p class="sr d2" style="font-size:1rem;color:var(--text-lt);line-height:1.78;margin-bottom:1.5rem">
-          Today we serve thousands of families across Guelph, Kitchener, Cambridge, Waterloo, Fergus, Elora, and Acton. Every technician is licensed, background-checked, and trained on the latest Energy Star certified equipment. Our 10-year warranty and 24/7 emergency coverage aren't just marketing — they're the standard we hold ourselves to every single day.
-        </p>
-        <div class="about-values sr d3">
-          <div class="about-value">
-            <div class="about-value-dot"></div>
-            <p><strong>Licensed &amp; insured.</strong> Every technician is fully certified and carries $5M liability coverage for your protection.</p>
-          </div>
-          <div class="about-value">
-            <div class="about-value-dot"></div>
-            <p><strong>Transparent pricing.</strong> You get a detailed written quote before any work begins. No hidden fees, no surprise invoices.</p>
-          </div>
-          <div class="about-value">
-            <div class="about-value-dot"></div>
-            <p><strong>Energy Star certified.</strong> We only recommend and install equipment that meets or exceeds Energy Star efficiency standards.</p>
-          </div>
-        </div>
-        <div class="about-sig sr d4">
-          The Elite HVAC Team
-          <small>Proudly serving Guelph &amp; surrounding areas since 2011</small>
-        </div>
-        <div style="margin-top:1.75rem" class="sr d5">
-          <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
-        </div>
-      </div>
+<!-- CTA BAND -->
+<section id="quote-band" style="background:var(--accent,#e07020);padding:4rem 0;">
+  <div class="wrap" style="text-align:center;">
+    <h2 style="color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:1rem;">Ready for Year-Round Comfort?</h2>
+    <p style="color:rgba(255,255,255,.88);font-size:1.05rem;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto;">Energy Star certified. 10-year warranty. Written upfront pricing. Flexible financing available.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="contact/" class="btn btn-primary btn-lg" style="background:#fff;color:var(--accent,#e07020);">
+        Get a Free Quote
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="tel:5195550161" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.94a16 16 0 0 0 6.16 6.16l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (519) 555-0161
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     QUOTE / CONTACT FORM
-═══════════════════════════════════ -->
-<section id="quote" aria-labelledby="quote-title">
-  <div class="wrap">
-    <div class="quote-grid">
-      <div>
-        <div class="eyebrow sr">Get Started</div>
-        <h2 class="section-title sr d1" id="quote-title">
-          Free Quote —<br>No Pressure, No Obligation
-        </h2>
-        <p class="sr d2" style="font-size:1rem;color:var(--text-lt);line-height:1.75;margin-bottom:2rem;max-width:400px">
-          Tell us about your HVAC needs. We'll assess your home, recommend the right solution, and give you a detailed written quote within 24 hours. Financing available on approved credit.
-        </p>
-        <div class="contact-items sr d3">
-          <a href="tel:5195550161" class="contact-item" style="text-decoration:none">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.94a16 16 0 0 0 6.16 6.16l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <strong>(519) 555-0161</strong>
-              <span>Mon–Fri 8am–6pm · Sat 9am–4pm · 24/7 Emergency</span>
-            </div>
-          </a>
-          <a href="mailto:info@elitehvac.ca" class="contact-item" style="text-decoration:none">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div>
-              <strong>info@elitehvac.ca</strong>
-              <span>Response within 24 hours</span>
-            </div>
-          </a>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <strong>Guelph &amp; Surrounding Areas</strong>
-              <span>Kitchener · Cambridge · Waterloo · Fergus · Elora · Acton</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Form Card -->
-      <div class="quote-form-card sr d2">
-        <div class="form-badge">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Quote within 24 hours · Financing Available
-        </div>
-        <h3>Request a Free Quote</h3>
-        <p>No obligation. We'll assess your needs and recommend the right solution.</p>
-        <form id="quote-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First Name *</label>
-              <input id="fname" type="text" placeholder="Jane" required autocomplete="given-name" />
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name *</label>
-              <input id="lname" type="text" placeholder="Smith" required autocomplete="family-name" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="fphone">Phone Number *</label>
-            <input id="fphone" type="tel" placeholder="(519) 000-0000" required autocomplete="tel" />
-          </div>
-          <div class="form-group">
-            <label for="femail">Email Address</label>
-            <input id="femail" type="email" placeholder="jane@example.com" autocomplete="email" />
-          </div>
-          <div class="form-group">
-            <label for="fservice">Service Required *</label>
-            <select id="fservice" required>
-              <option value="">Choose a service…</option>
-              <option>Furnace Installation</option>
-              <option>AC Installation</option>
-              <option>Heat Pump Installation</option>
-              <option>Duct Cleaning</option>
-              <option>Emergency Repair</option>
-              <option>Maintenance Plan</option>
-              <option>System Replacement (Furnace + AC)</option>
-              <option>Not sure — need an assessment</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="fmsg">Tell Us More (Optional)</label>
-            <textarea id="fmsg" rows="3" placeholder="e.g. Furnace is 18 years old and making noise, home is ~1,800 sq ft, interested in financing options…"></textarea>
-          </div>
-          <button type="submit" id="form-submit-btn" class="btn btn-accent btn-lg form-submit">
-            Request Free Quote
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </button>
-          <p class="form-disc">🔒 Your information is kept private. We only use it to contact you about your HVAC project.</p>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     FOOTER
-═══════════════════════════════════ -->
+<!-- FOOTER -->
 <footer aria-label="Site footer">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#" class="logo" aria-label="Elite HVAC Solutions home">
+        <a href="/" class="logo" aria-label="Elite HVAC Solutions home">
           <div class="logo-icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/>
@@ -701,26 +305,20 @@
           <div class="footer-hour"><strong>Emergency</strong><span>24 / 7 Available</span></div>
         </div>
         <div class="footer-socials" aria-label="Social media">
-          <a href="#" class="footer-soc" aria-label="Instagram">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="footer-soc" aria-label="Facebook">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="#" class="footer-soc" aria-label="Google Reviews">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </a>
+          <a href="#" class="footer-soc" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" class="footer-soc" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="footer-soc" aria-label="Google Reviews"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
         <ul>
-          <li><a href="#services">Furnace Installation</a></li>
-          <li><a href="#services">AC Installation</a></li>
-          <li><a href="#services">Heat Pumps</a></li>
-          <li><a href="#services">Duct Cleaning</a></li>
-          <li><a href="#services">Emergency Repair</a></li>
-          <li><a href="#services">Maintenance Plans</a></li>
+          <li><a href="services/">Furnace Installation</a></li>
+          <li><a href="services/">AC Installation</a></li>
+          <li><a href="services/">Heat Pumps</a></li>
+          <li><a href="services/">Duct Cleaning</a></li>
+          <li><a href="services/">Emergency Repair</a></li>
+          <li><a href="services/">Maintenance Plans</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -728,20 +326,20 @@
         <ul>
           <li><a href="tel:5195550161">(519) 555-0161</a></li>
           <li><a href="mailto:info@elitehvac.ca">info@elitehvac.ca</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-          <li><a href="#quote">Get a Quote</a></li>
+          <li><a href="about/">About Us</a></li>
+          <li><a href="about/">Reviews</a></li>
+          <li><a href="contact/">Get a Quote</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Service Areas</h5>
         <ul>
-          <li><a href="#quote">Guelph</a></li>
-          <li><a href="#quote">Kitchener</a></li>
-          <li><a href="#quote">Cambridge</a></li>
-          <li><a href="#quote">Waterloo</a></li>
-          <li><a href="#quote">Fergus</a></li>
-          <li><a href="#quote">Elora &amp; Acton</a></li>
+          <li><a href="contact/">Guelph</a></li>
+          <li><a href="contact/">Kitchener</a></li>
+          <li><a href="contact/">Cambridge</a></li>
+          <li><a href="contact/">Waterloo</a></li>
+          <li><a href="contact/">Fergus</a></li>
+          <li><a href="contact/">Elora &amp; Acton</a></li>
         </ul>
       </div>
     </div>
@@ -752,37 +350,19 @@
         <a href="#">Terms of Service</a>
       </div>
     </div>
-    <!-- GRD Banner -->
     <div class="grd-banner">
       This is a demo site built by <a href="https://grandriverdigital.ca" target="_blank" rel="noopener">Grand River Digital</a> — grandriverdigital.ca
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════
-     LIGHTBOX MODAL
-═══════════════════════════════════ -->
-<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-  <button class="lb-close" id="lb-close" aria-label="Close image viewer">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-  </button>
-  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-  </button>
-  <img id="lb-img" src="" alt="" onerror="imgFallback(this)">
-  <button class="lb-nav lb-next" id="lb-next" aria-label="Next image">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-  </button>
-  <div class="lb-caption" id="lb-caption"></div>
-</div>
-
-<!-- MOBILE STICKY BOTTOM BAR -->
+<!-- MOBILE STICKY BAR -->
 <div id="mob-bar" role="navigation" aria-label="Quick contact">
   <a href="tel:5195550161" class="btn btn-accent">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.94a16 16 0 0 0 6.16 6.16l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     Call Now
   </a>
-  <a href="#quote" class="btn btn-outline-mob">Free Quote</a>
+  <a href="contact/" class="btn btn-outline-dk">Free Quote</a>
 </div>
 
 <script src="script.js"></script>
